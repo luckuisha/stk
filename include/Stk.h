@@ -7,6 +7,7 @@
 #include <sstream>
 #include <vector>
 #include <stdexcept>
+#include <qglobal.h>
 //#include <cstdlib>
 
 /*! \namespace stk
@@ -618,7 +619,7 @@ const unsigned int RT_BUFFER_SIZE = 512;
 const StkFloat PI           = 3.14159265358979;
 const StkFloat TWO_PI       = 2 * PI;
 const StkFloat ONE_OVER_128 = 0.0078125;
-#include <qglobal.h>
+
 #if defined(__WINDOWS_DS__) || defined(__WINDOWS_ASIO__) || defined(__WINDOWS_MM__) || defined(Q_OS_WIN)
   #define __OS_WINDOWS__
   #define __STK_REALTIME__
