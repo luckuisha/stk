@@ -620,15 +620,15 @@ const StkFloat PI           = 3.14159265358979;
 const StkFloat TWO_PI       = 2 * PI;
 const StkFloat ONE_OVER_128 = 0.0078125;
 
-#if defined(__WINDOWS_DS__) || defined(__WINDOWS_ASIO__) || defined(__WINDOWS_MM__) || defined(Q_OS_WIN)
+#if defined(__WINDOWS_DS__) || defined(__WINDOWS_ASIO__) || defined(__WINDOWS_MM__)
   #define __OS_WINDOWS__
   #define __STK_REALTIME__
-#elif defined(__LINUX_OSS__) || defined(__LINUX_ALSA__) || defined(__UNIX_JACK__) || defined(Q_OS_LINUX)
+#elif defined(__LINUX_OSS__) || defined(__LINUX_ALSA__) || defined(__UNIX_JACK__)
   #define __OS_LINUX__
   #define __STK_REALTIME__
 #elif defined(__IRIX_AL__)
   #define __OS_IRIX__
-#elif defined(__MACOSX_CORE__) || defined(__UNIX_JACK__) || defined(Q_OS_DARWIN)
+#elif defined(__MACOSX_CORE__) || defined(__UNIX_JACK__)
   #define __OS_MACOSX__
   #define __STK_REALTIME__
 #endif
