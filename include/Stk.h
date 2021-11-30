@@ -7,7 +7,7 @@
 #include <sstream>
 #include <vector>
 #include <stdexcept>
-#include <qglobal.h>
+
 //#include <cstdlib>
 
 /*! \namespace stk
